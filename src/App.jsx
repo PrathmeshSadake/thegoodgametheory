@@ -1,6 +1,7 @@
-import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import { useState } from "react";
+import { useQuery } from "@tanstack/react-query";
+
 import { Input } from "./components/Input";
 
 const getData = async () => {
@@ -61,18 +62,6 @@ export default function App() {
                   <div className='flex-shrink-0'>
                     <span className='sr-only'>{item.tagline}</span>
                   </div>
-                  {/* <div className='ml-3'>
-                  <p className='text-sm font-medium text-gray-900'>
-                    <a href={item.author.href} className='hover:underline'>
-                      {item.author.name}
-                    </a>
-                  </p>
-                  <div className='flex space-x-1 text-sm text-gray-500'>
-                    <time dateTime={item.datetime}>{item.date}</time>
-                    <span aria-hidden='true'>&middot;</span>
-                    <span>{item.readingTime} read</span>
-                  </div>
-                </div> */}
                 </div>
               </div>
             </div>

@@ -24,10 +24,12 @@ export default function App() {
 
   if (isLoading) return <div>Loading...</div>;
   return (
-    <div className='max-w-7xl mx-auto py-12'>
-      <h1 className='text-center my-4 font-semibold text-4xl'>Search</h1>
+    <div className='max-w-7xl mx-auto p-12 bg-gray-900 min-h-screen'>
+      <h1 className='text-center my-4 font-semibold text-4xl text-gray-100'>
+        Search 🔎
+      </h1>
       <Input
-        className='mx-auto max-w-3xl'
+        className='mx-auto max-w-3xl bg-gray-800 text-white focus:ring-0'
         type='text'
         placeholder='Search'
         onChange={handleChange}
